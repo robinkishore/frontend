@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="numbers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>NUMBERS</title>
+    <script>
+        var numOne, numTwo, Response, temp;
+        function calculate() {
+            numOne = parseInt(document.getElementById("num1").value);
+            numTwo = parseInt(document.getElementById("num2").value);
+            if (numOne && numTwo) {
+                temp = document.getElementById("Response");
+                temp.style.display = "block";
+                Response = numOne + numTwo;
+                document.getElementById("add").value = Response;
+                Response = numOne - numTwo;
+                document.getElementById("subtract").value = Response;
+                Response = numOne * numTwo;
+                document.getElementById("multiply").value = Response;
+                Response = numOne / numTwo;
+                document.getElementById("divide").value = Response;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="numbers">
+            <input type="number" id="num1" placeholder="0">
+            <br><br>
+            <input type="number" id="num2" placeholder="0">
+            <br><br>
+            <button onclick="calculate()" class="equal">Ans</button>
+            <br><br>
+            <p id="Response" style="display:none;">
+                <br>
+                Addition= <input id="add"><br>
+                Subraction= <input id="subtract"><br>
+                Multiply= <input id="multiply"><br>
+                Divide= <input id="divide">
+
+            </p>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
