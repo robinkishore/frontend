@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+    <link rel="stylesheet" href="regist.css">
+    <link rel="stylesheet" href="D:\html1\css\bootstrap-grid.min.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="register">
+            <h2>REGISTER HERE</h2>
+            <form id="register" method="post">
+                <label>FIRST NAME:</label>
+                <br>
+                <input type="text" name="fname" id="name">
+                <br><br>
+                <label>LAST NAME :</label>
+                <br>
+                <input type="text" name="fname" id="name">
+                <br><br>
+                <label>AGE :</label>
+                <br>
+                <input type="number" name="age" id="name" pattern="(.{18-150,})">
+                <br><br>
+                <label>EMAIL :</label>
+                <br>
+                <input type="email" name="email" id="name">
+                <br><br>
+                <label>GENDER :</label>
+                <br>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <span id="male">Female</span>
+                <br><br>
+                <label>KNOWN LANGUAGE :</label>
+                <br>
+                &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="lang" id="Tamil">
+                &nbsp;
+                <span id="Tamil">TAMIL</span>
+                &nbsp; &nbsp; &nbsp;
+                <input type="checkbox" name="lang" id="english">
+                &nbsp;
+                <span id="english">ENGLISH</span>
+                <br><br>
+                <input type="submit" id="submit"><br>
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+
+            </form>
+            <div id="message">
+                <p id="name" class="invalid"><b></b></p>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
