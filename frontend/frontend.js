@@ -7,13 +7,13 @@ function validate() {
         document.form.email.focus();
         return false;
     }
-    if (!isNaN(username1)) {
+    else if (!isNaN(username1)) {
         alert("Enter Alphabets only");
         document.form.email.value = "";
         document.form.email.focus();
         return false;
     }
-    if (password == "") {
+    if (password1 == "") {
         alert("Enter atleast 6 characters");
         document.form.password.focus();
         return false;
